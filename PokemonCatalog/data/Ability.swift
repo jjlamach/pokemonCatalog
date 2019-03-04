@@ -7,6 +7,9 @@
 //
 
 import Foundation
+/**
+    The Ability model.
+ */
 public struct Ability: Codable {
     public let effectEntries: [EffectEntry]
     

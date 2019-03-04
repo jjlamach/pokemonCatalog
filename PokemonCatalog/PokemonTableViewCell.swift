@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+/**
+    Object representing the cell of the TableView.
+ */
 class PokemonTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!

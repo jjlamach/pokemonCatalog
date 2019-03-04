@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfB-a6-Sjh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfB-a6-Sjh">
                                 <rect key="frame" x="164" y="166" width="195" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="195" id="TRh-x2-r9b"/>
+                                    <constraint firstAttribute="width" constant="195" id="huo-ih-egp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -40,34 +40,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities - Attributes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJF-o5-Tzw">
-                                <rect key="frame" x="93" y="249" width="190" height="24"/>
+                                <rect key="frame" x="93" y="248" width="190" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFT-WV-VQy">
-                                <rect key="frame" x="28" y="310" width="320" height="128"/>
+                                <rect key="frame" x="28" y="309" width="320" height="129"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="Vnr-oU-zw6">
+                                <rect key="frame" x="104" y="454" width="179" height="164"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KSu-f6-7Tu" firstAttribute="top" secondItem="jCH-Cf-S9a" secondAttribute="bottom" constant="38" id="7Kr-ct-xIs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vnr-oU-zw6" secondAttribute="bottom" constant="49" id="2YJ-Xd-X0i"/>
                             <constraint firstItem="TFT-WV-VQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="91I-u6-pZ3"/>
                             <constraint firstItem="jCH-Cf-S9a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="A5a-S3-ZuX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vnr-oU-zw6" secondAttribute="trailing" constant="92" id="Dad-YD-fGk"/>
+                            <constraint firstItem="RfB-a6-Sjh" firstAttribute="leading" secondItem="KSu-f6-7Tu" secondAttribute="trailing" constant="8" symbolic="YES" id="J1R-zZ-u57"/>
+                            <constraint firstItem="KSu-f6-7Tu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kye-ZU-dUk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jCH-Cf-S9a" secondAttribute="trailing" constant="146" id="MBI-oW-yGR"/>
+                            <constraint firstItem="RfB-a6-Sjh" firstAttribute="centerY" secondItem="KSu-f6-7Tu" secondAttribute="centerY" id="REm-Fl-Pmz"/>
+                            <constraint firstItem="KSu-f6-7Tu" firstAttribute="top" secondItem="jCH-Cf-S9a" secondAttribute="bottom" constant="38" id="Rvp-Ui-CT3"/>
                             <constraint firstItem="TFT-WV-VQy" firstAttribute="top" secondItem="wJF-o5-Tzw" secondAttribute="bottom" constant="37" id="SsT-kX-7g7"/>
-                            <constraint firstItem="wJF-o5-Tzw" firstAttribute="top" secondItem="KSu-f6-7Tu" secondAttribute="bottom" constant="60" id="Uz5-kJ-MeK"/>
                             <constraint firstItem="jCH-Cf-S9a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="Waf-oc-UJL"/>
                             <constraint firstItem="wJF-o5-Tzw" firstAttribute="centerX" secondItem="jCH-Cf-S9a" secondAttribute="centerX" id="X1n-c5-EA3"/>
-                            <constraint firstItem="RfB-a6-Sjh" firstAttribute="top" secondItem="jCH-Cf-S9a" secondAttribute="bottom" constant="40" id="ZaD-Km-1YI"/>
-                            <constraint firstItem="RfB-a6-Sjh" firstAttribute="leading" secondItem="KSu-f6-7Tu" secondAttribute="trailing" constant="8" symbolic="YES" id="eRY-OG-DKQ"/>
-                            <constraint firstItem="KSu-f6-7Tu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oSz-d0-kER"/>
+                            <constraint firstItem="wJF-o5-Tzw" firstAttribute="top" secondItem="RfB-a6-Sjh" secondAttribute="bottom" constant="61" id="XYW-mU-BAf"/>
+                            <constraint firstItem="RfB-a6-Sjh" firstAttribute="top" secondItem="jCH-Cf-S9a" secondAttribute="bottom" constant="40" id="cKm-ex-5MR"/>
+                            <constraint firstItem="Vnr-oU-zw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="imx-ft-E2g"/>
+                            <constraint firstItem="Vnr-oU-zw6" firstAttribute="top" secondItem="TFT-WV-VQy" secondAttribute="bottom" constant="16" id="l3V-AV-Lh2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TFT-WV-VQy" secondAttribute="trailing" constant="27" id="qH6-mf-VMy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TFT-WV-VQy" secondAttribute="bottom" constant="229" id="tiY-6r-3oa"/>
-                            <constraint firstItem="RfB-a6-Sjh" firstAttribute="centerY" secondItem="KSu-f6-7Tu" secondAttribute="centerY" id="vYa-jz-zCc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -143,4 +150,7 @@
             <point key="canvasLocation" x="577" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pikachu" width="630" height="630"/>
+    </resources>
 </document>

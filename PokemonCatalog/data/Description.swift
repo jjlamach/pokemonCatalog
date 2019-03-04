@@ -7,6 +7,9 @@
 //
 
 import Foundation
+/**
+    The Description model.
+ */
 public struct Description: Codable {
     public let descriptions: [DescriptionElement]
     public let geneModulo: Int

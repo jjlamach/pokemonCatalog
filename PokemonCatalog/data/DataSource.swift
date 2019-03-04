@@ -7,6 +7,9 @@
 //
 
 import Foundation
+/**
+    The DataSource of the app.
+ */
 public struct Pokemon: Codable {
     public let results: [Result]
 
